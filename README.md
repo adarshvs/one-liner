@@ -6,3 +6,7 @@ cat subdomains.txt | while read subdomain; do jaeles scan -s /path/to/signatures
 
 # one-liner dirsearch 
 sudo dirsearch -l /home/domains.txt  -e* -f -o dirsearch-out.txt
+
+
+# one-liner nikto 
+nikto -h urls.txt -o results.txt
